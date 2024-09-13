@@ -12,7 +12,7 @@ main:
     url: /
     weight: 10
   - name: MyNetflix
-    url: /myNetflix/
+    url: /mynetflix/
     weight: 30
   - name: study
     url: /study/
