@@ -14,6 +14,10 @@ I often get asked about what software or hardware I use, so this page will serve
 ## Website
 
 - [Hugo Blox](https://hugoblox.com) (see the tutorial on [Getting Started](/blog/get-started/))
+<!-- Hugo Blox: 이 부분은 텍스트에 링크를 추가하는 방법으로 독자가 이 링크를 클릭하면 해당 웹사이트로 이동되게 된다.
+대괄호 [Hugo Blox] 안에 표시하고 싶은 텍스트를 작성합니다.
+괄호 뒤의 (https://hugoblox.com)는 연결할 URL을 지정합니다.
+ -->
 
 ## Editor + Terminal
 

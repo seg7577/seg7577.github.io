@@ -11,7 +11,7 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: myNetflix
+  - name: MyNetflix
     url: myNetflix/
     weight: 30
   - name: study
