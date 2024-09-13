@@ -20,7 +20,7 @@ superuser: true
 role: Student
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Jeonbuk national University
+  - name: Jeonbuk National University
     url: https://www.jbnu.ac.kr
 
 # Short bio (displayed in user profile at end of posts)
@@ -52,6 +52,3 @@ highlight_name: true
 website: ""
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include
-distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops
-self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.

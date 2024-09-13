@@ -11,3 +11,9 @@ main:
   - name: Uses
     url: uses/
     weight: 30
+  - name: myNetflix
+    url: myNetflix/
+    weight: 30
+  - name: study
+    url: study/
+    weight: 30
