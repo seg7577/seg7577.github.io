@@ -3,10 +3,13 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Appearance
+# Appearance : 외관 설정
 appearance:
   mode: system
+  #system으로 설정된 경우, 사용자 시스템 설정에 따라 다크, 라이트 모드가 적용됨.
   color: blue
+  #사이트의 주요 색상 설정
+
 
 # SEO
 marketing:
@@ -15,6 +18,7 @@ marketing:
     local_business_type: ''
     org_name: ''
     description: 'A highly-customizable Hugo blog theme powered by Hugo Blox Builder.'
+    #사이트에 대한 설명으로, 이 설명은 검색 엔진이나 sns에서 사이트가 공유될 때 나타남.
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -30,14 +34,18 @@ marketing:
 header:
   navbar:
     enable: true
+    #네비게이션 바 활성화
     show_search: true
+    #검색 기능이 헤더에 표시됨
     show_theme_chooser: true
-
+    #사이트 방문자가 테마 선택 기능을 활성화 함
 # Site footer
 footer:
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
+    #저작권 문구
     license:
+    #저작권 설정 관리
       enable: true
       allow_derivatives: false
       share_alike: true
@@ -48,13 +56,15 @@ locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
 
-# Site features
+# Site features : 기타 기능
 features:
   math:
+  #수식 렌더링을 위한 기능으로, 수식이 필요한 경우 true로 설정함
     enable: false
   privacy_pack:
+  #개인정보 보호 기능 옵션
     enable: false
   repository:
-    url: 'https://github.com/HugoBlox/hugo-blox-builder/'
+    url: 'https://github.com/seg7577/'
     content_dir: starters/blog/content
     branch: main
