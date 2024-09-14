@@ -12,4 +12,4 @@ Here is a list of Netflix shows I enjoyed watching, along with my reviews.
 ![알고있지만 포스터](/images/algoissjiman.png)
 
 - [마이네임](https://namu.wiki/w/마이%20네임)
-![마이네임 포스터](/images/maineim.jepg)
+![마이네임 포스터](/images/maineim.jpeg)
