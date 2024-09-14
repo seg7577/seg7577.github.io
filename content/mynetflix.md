@@ -9,5 +9,5 @@ Here is a list of Netflix shows I enjoyed watching, along with my reviews. 수�
 
 ## Title
 - [알고있지만](https://namu.wiki/w/알고있지만%2C/images/algoissjiman.png) (back to on [Home] (https://seg7577.github.io))
-![알고있지만 포스터] (https://namu.wiki/w/알고있지만%2C/images/algoissjiman.png)
+![알고있지만 포스터](https://namu.wiki/w/알고있지만%2C/images/algoissjiman.png)
 
