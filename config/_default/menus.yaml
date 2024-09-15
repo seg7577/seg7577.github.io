@@ -13,15 +13,17 @@ main:
     url: /
     weight: 10
   - name: MyNetflix
-    url: /mynetflix/
+    identifier: mynetflix
+    url: mynetflix/
     weight: 40
-    # children: #하위 메뉴 추가
-    #   - name: "Korean Dramas"
-    #     url : /mynetflix/korean-dramas/
-    #     weight: 10
-    #   - name: "Western Shows"
-    #     url: /mynetflix/western-shows/
-    #     weight: 20
+  - name: "Korean Dramas"
+    parent: mynetflix
+    url : mynetflix/korean-dramas/
+    weight: 10
+  - name: "Western Shows"
+    parent: mynetflix
+    url: mynetflix/western-shows/
+    weight: 20
   - name: study
-    url: /study/
+    url: study/
     weight: 50

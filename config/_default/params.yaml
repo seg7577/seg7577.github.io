@@ -1,4 +1,4 @@
-# SITE SETUP
+# SITE SETUP (추가적인 파라미터 설정)
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
@@ -39,6 +39,7 @@ header:
     #검색 기능이 헤더에 표시됨
     show_theme_chooser: true
     #사이트 방문자가 테마 선택 기능을 활성화 함
+    
 # Site footer
 footer:
   copyright:

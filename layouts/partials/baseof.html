@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- <style>
+    /* nav.html 내부에 직접 스타일 추가 */
+    .main-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+    }
+    
+    .menu-item a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .menu-item a:hover {
+        background-color: #555;
+        color: #fff;
+    }
+    
+    /* 드롭다운 메뉴 스타일 */
+    .has-dropdown .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    .has-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-menu li {
+        margin: 0;
+    }
+    
+    .dropdown-menu li a {
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+        font-weight: normal;
+    }
+    
+    .dropdown-menu li a:hover {
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #333;
+        padding: 10px 0;
+    }
+    
+    .main-menu li {
+        position: relative;
+    }
+</style>
+     -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "static/css/style.css" | relURL }}">
+
+</head>
+<body>
+    <header>
+        <!-- 네비게이션 바를 위한 partial 호출 -->
+        {{ partial "layouts/partials/nav.html" . }}
+    </header>
+
+    <main>
+        <!-- 페이지별 콘텐츠가 여기에 렌더링 -->
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <p>© {{ now.Year }} My Website</p>
+    </footer>
+</body>
+</html>
