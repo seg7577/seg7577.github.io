@@ -6,6 +6,7 @@ main:
     url: tags/
     weight: 20
   - name: Uses
+  
     url: uses/
     weight: 30
   - name: Home
@@ -14,9 +15,7 @@ main:
   - name: MyNetflix
     url: /mynetflix/
     weight: 40
-
-    #하위 메뉴 추가
-    children:
+    children: #하위 메뉴 추가
       - name: "Korean Dramas"
         url : /mynetflix/korean-dramas/
         weight: 10

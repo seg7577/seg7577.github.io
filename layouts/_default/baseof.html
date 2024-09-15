@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+    <header>
+        <!-- 네비게이션 바를 위한 partial 호출 -->
+        {{ partial "nav.html" . }}
+    </header>
+
+    <main>
+        <!-- 페이지별 콘텐츠가 여기에 렌더링 -->
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <p>© {{ now.Year }} My Website</p>
+    </footer>
+</body>
+</html>
