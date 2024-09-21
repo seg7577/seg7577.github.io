@@ -2,15 +2,11 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Uses
-    url: uses/
-    weight: 10
 
-  # 추가된 것!
   - name: Introduction
     identifier: introduction
     url: introduction/
-    weight: 20
+    weight: 10
   - name: About Me
     parent: introduction
     url: introduction/about-me
@@ -18,6 +14,19 @@ main:
   - name: Skills
     parent: introduction
     url: introduction/skills
+    weight: 20
+
+  - name: Blog
+    identifier: blog
+    url: blog/
+    weight: 20
+  - name: Challenges
+    parent: blog
+    url: blog/challenges
+    weight: 10
+  - name: record
+    parent: blog
+    url: blog/record
     weight: 20
 
   - name: Home
