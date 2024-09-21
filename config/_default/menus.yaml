@@ -2,16 +2,27 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Topics
-    url: tags/
-    weight: 20
   - name: Uses
-  
     url: uses/
-    weight: 30
+    weight: 10
+
+  - name: Introduction
+    identifier: introduction
+    url: introduction/
+    weight: 20
+  - name: About Me
+    parent: introduction
+    url: introduction/about-me
+    weight: 10
+  - name: Skills
+    parent: introduction
+    url: introduction/skills
+    weight: 20
+
   - name: Home
     url: /
-    weight: 10
+    weight: 30
+
   - name: MyNetflix
     identifier: mynetflix
     url: mynetflix/
@@ -24,6 +35,16 @@ main:
     parent: mynetflix
     url: mynetflix/western-shows/
     weight: 20
-  - name: study
+
+  - name: Study
+    identifier: study
     url: study/
     weight: 50
+  - name: Project
+    parent: study
+    url: study/project
+    weight: 10
+  - name: ProblemSolving
+    parent: study
+    url: study/problemsolving
+    weight: 20
