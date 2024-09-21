@@ -20,7 +20,7 @@ superuser: true
 role: Student
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Jeonbuk National University
+  - name: Jeonbuk National University Department of Computer Engineering
     url: https://www.jbnu.ac.kr
 
 # Short bio (displayed in user profile at end of posts)
@@ -33,17 +33,15 @@ profiles:
     url: 'mailto:seg082911@gmail.com'
     label: E-mail Me
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/m._.se0k/
   - icon: brands/github
     url: https://www.github.com/
-
+  - icon: phone
+    url: 'tel:+821087704710'
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
-  - icon: rss
-    url: ./post/index.xml
-    label: Subscribe to my blog via RSS feed
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
