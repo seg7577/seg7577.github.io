@@ -6,6 +6,7 @@ main:
     url: uses/
     weight: 10
 
+  # 추가된 것!
   - name: Introduction
     identifier: introduction
     url: introduction/
