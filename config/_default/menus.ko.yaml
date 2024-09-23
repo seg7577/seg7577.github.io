@@ -1,0 +1,116 @@
+# Navigation Links
+#   The weight parameter defines the order that the links will appear in.
+main:
+  - name: 소개
+    identifier: introduction
+    url: introduction/
+    weight: 10
+  - name: 나에 대한 소개
+    parent: introduction
+    url: introduction/about-me
+    weight: 10
+  - name: 기술
+    parent: introduction
+    url: introduction/skills
+    weight: 20
+          
+  - name: 블로그
+    identifier: blog
+    url: blog/
+    weight: 20
+  - name: 챌린지 및 대회
+    parent: blog
+    url: blog/challenges
+    weight: 10
+  - name: 기록
+    parent: blog
+    url: blog/challenges
+    weight: 20
+
+  - name: 홈
+    url: /
+    weight: 30
+
+  - name: 넷플릭스 
+    identifier: mynetflix
+    url: mynetflix/
+    weight: 40
+  - name: 한국
+    parent: mynetflix
+    url : mynetflix/korean-dramas/
+    weight: 10
+  - name: 서부
+    parent: mynetflix
+    url: mynetflix/western-shows/
+    weight: 20
+
+  - name: 공부
+    identifier: study
+    url: study/
+    weight: 50
+  - name: 프로젝트
+    parent: study
+    url: study/project
+    weight: 10
+  - name: 알고리즘 및 문제해결
+    parent: study
+    url: study/problemsolving
+    weight: 20
+
+####################################################################################################################################
+  # en:
+  #   - name: Introduction
+  #     identifier: introduction
+  #     url: introduction/
+  #     weight: 10
+  #   - name: About Me
+  #     parent: introduction
+  #     url: introduction/about-me
+  #     weight: 10
+  #   - name: Skills
+  #     parent: introduction
+  #     url: introduction/skills
+  #     weight: 20
+
+  #   - name: Blog
+  #     identifier: blog
+  #     url: blog/
+  #     weight: 20
+  #   - name: Challenges
+  #     parent: blog
+  #     url: blog/challenges
+  #     weight: 10
+  #   - name: record
+  #     parent: blog
+  #     url: blog/record
+  #     weight: 20
+
+  #   - name: Home
+  #     url: /
+  #     weight: 30
+
+  #   - name: MyNetflix
+  #     identifier: mynetflix
+  #     url: mynetflix/
+  #     weight: 40
+  #   - name: "Korean Dramas"
+  #     parent: mynetflix
+  #     url : mynetflix/korean-dramas/
+  #     weight: 10
+  #   - name: "Western Shows"
+  #     parent: mynetflix
+  #     url: mynetflix/western-shows/
+  #     weight: 20
+
+  #   - name: Study
+  #     identifier: study
+  #     url: study/
+  #     weight: 50
+  #   - name: Project
+  #     parent: study
+  #     url: study/project
+  #     weight: 10
+  #   - name: ProblemSolving
+  #     parent: study
+  #     url: study/problemsolving
+  #     weight: 20

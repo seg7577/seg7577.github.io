@@ -3,83 +3,11 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 # Default language
-en:
-  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
 ko:
   languageCode: ko
   contentDir: content/ko
-  titile: 민석의 블로그
-  params:
-    description: 한국어!
-    menu:
-      main:
-        - name: 소개
-          identifier: introduction
-          url: introduction/
-          weight: 10
-        - name: 나에 대한 소개
-          parent: introduction
-          url: introduction/about-me
-          weight: 10
-        - name: 기술
-          parent: skills
-          url: introduction/skills
-          weight: 20
-        
-        - name: 블로그
-          identifier: blog
-          url: blog/
-          weight: 20
-        - name: 챌린지 및 대회
-          parent: blog
-          url: blog/challenges
-          weight: 10
-        - name: 기록
-          parent: blog
-          url: blog/challenges
-          weight: 20
 
-        - name: 홈
-          url: /
-          weight: 30
-
-        - name: 넷플릭스 
-          identifier: mynetflix
-          url: mynetflix/
-          weight: 40
-        - name: 한국
-          parent: mynetflix
-          rl : mynetflix/korean-dramas/
-          weight: 10
-        - name: 서부
-          parent: mynetflix
-          url: mynetflix/western-shows/
-          weight: 20
-
-        - name: 공부
-          identifier: study
-          url: study/
-          weight: 50
-        - name: 프로젝트
-          parent: study
-          url: study/project
-          weight: 10
-        - name: 알고리즘 및 문제해결
-          parent: study
-          url: study/problemsolving
-          weight: 20
-
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+en:
+  languageCode: en-us
+  contentDir: content/en
+  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.

@@ -1,0 +1,56 @@
+main:
+  - name: Introduction
+    identifier: introduction
+    url: introduction/
+    weight: 10
+  - name: About Me
+    parent: introduction
+    url: introduction/about-me
+    weight: 10
+  - name: Skills
+    parent: introduction
+    url: introduction/skills
+    weight: 20
+
+  - name: Blog
+    identifier: blog
+    url: blog/
+    weight: 20
+  - name: Challenges
+    parent: blog
+    url: blog/challenges
+    weight: 10
+  - name: record
+    parent: blog
+    url: blog/record
+    weight: 20
+
+  - name: Home
+    url: /
+    weight: 30
+
+  - name: MyNetflix
+    identifier: mynetflix
+    url: mynetflix/
+    weight: 40
+  - name: "Korean Dramas"
+    parent: mynetflix
+    url : mynetflix/korean-dramas/
+    weight: 10
+  - name: "Western Shows"
+    parent: mynetflix
+    url: mynetflix/western-shows/
+    weight: 20
+
+  - name: Study
+    identifier: study
+    url: study/
+    weight: 50
+  - name: Project
+    parent: study
+    url: study/project
+    weight: 10
+  - name: ProblemSolving
+    parent: study
+    url: study/problemsolving
+    weight: 20

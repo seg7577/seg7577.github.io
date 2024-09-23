@@ -33,8 +33,8 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: true
+defaultContentLanguage: ko
+hasCJKLanguage: true  #한중일 언어에 대한 허용 여부
 defaultContentLanguageInSubdir: true
 removePathAccents: true
 
@@ -43,8 +43,7 @@ removePathAccents: true
 ############################
 
 build:
-  writeStats: true
-enableGitInfo: false
+  wbleGitInfo: false
 summaryLength: 30
 paginate: 10
 enableEmoji: true
@@ -85,3 +84,4 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+riteStats: true
