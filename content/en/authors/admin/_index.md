@@ -1,33 +1,16 @@
 ---
-# Display name
 title: m._.se0k
-
-# Name pronunciation (optional)
 name_pronunciation: Kwon Min Seok
-
-# Full name (for SEO)
 first_name: Min Seok
 last_name: Kwon
-
-# Status emoji
 status:
   icon: ☕️
-
-# Is this the primary user of the site?
 superuser: true
-
-# Role/position/tagline
 role: Student
-# Organizations/Affiliations to show in About widget
 organizations:
   - name: Jeonbuk National University Department of Computer Engineering
     url: https://www.jbnu.ac.kr
-
-# Short bio (displayed in user profile at end of posts)
-bio: I am interested in front-end, back-end, and cloud development.
-
-# Social Networking
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+bio: "I am a full-stack developer in training."
 profiles:
   - icon: at-symbol
     url: 'mailto:seg082911@gmail.com'
@@ -38,15 +21,10 @@ profiles:
     url: https://www.github.com/
   - icon: phone
     url: 'tel:+821087704710'
-  # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   - icon: academicons/cv
     url: uploads/resume.pdf
     label: Download my resume
-
-# Highlight the author in author lists? (true/false)
 highlight_name: true
-
-# Author's website URL
 website: ""
 ---
-
+I am Minseok Kwon, a student majoring in Computer Engineering at Jeonbuk National University.

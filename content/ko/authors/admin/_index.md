@@ -17,14 +17,13 @@ superuser: true
 
 # Role/position/tagline
 role: 학생
-# Organizations/Affiliations to show in About widget
+
 organizations:
   - name: 전북대학교 컴퓨터 공학부
     url: https://www.jbnu.ac.kr
 
 # Short bio (displayed in user profile at end of posts)
-bio: 저는 풀스택 개발과 클라우드 개발에 관심을 가지고 있는 학생입니다.
-
+bio: 저는 전북대학교에서 컴퓨터공학을 전공하고 있는 학생 권민석입니다.
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
@@ -48,4 +47,4 @@ highlight_name: true
 # Author's website URL
 website: ""
 ---
-
+  안녕하세요. 저는 전북대학교에서 컴퓨터공학을 전공하고 있는 학생 권민석입니다.
