@@ -1,0 +1,12 @@
+.note {
+    background-color: #fff9c4; /* 옅은 노란색 배경 */
+    border-left: 5px solid #ffeb3b; /* 메모지 왼쪽 테두리 강조 */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 메모지 그림자 */
+    font-family: 'Courier New', Courier, monospace; /* 메모지 스타일에 어울리는 폰트 */
+    color: #333; /* 텍스트 색상 */
+
+  }
+  

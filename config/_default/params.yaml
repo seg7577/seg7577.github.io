@@ -19,6 +19,7 @@ marketing:
     org_name: ''
     description: 'A highly-customizable Hugo blog theme powered by Hugo Blox Builder.'
     #사이트에 대한 설명으로, 이 설명은 검색 엔진이나 sns에서 사이트가 공유될 때 나타남.
+
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -69,3 +70,6 @@ features:
     url: 'https://github.com/seg7577/'
     content_dir: starters/blog/content
     branch: main
+
+params:
+  customCSS:  css/custom.css
