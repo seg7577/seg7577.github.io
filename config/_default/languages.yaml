@@ -1,8 +1,3 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
-
-# Default language
 ko:
   languageCode: ko
   contentDir: content/ko
@@ -10,4 +5,4 @@ ko:
 en:
   languageCode: en-us
   contentDir: content/en
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  
