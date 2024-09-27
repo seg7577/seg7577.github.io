@@ -7,7 +7,7 @@
 appearance:
   mode: system
   #system으로 설정된 경우, 사용자 시스템 설정에 따라 다크, 라이트 모드가 적용됨.
-  color: blue
+  color: red
   #사이트의 주요 색상 설정
 
 
