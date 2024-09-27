@@ -2,7 +2,7 @@
 
 [![Screenshot](./.github/preview.png)](https://seg7577.github.io)
 
-The **Creator's Blog** Hugo Theme empowers you to easily create your own _personal blog_ or _build a business around your content_.
+<!-- The **Creator's Blog** Hugo Theme empowers you to easily create your own _personal blog_ or _build a business around your content_.
 
 ️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, block-based website builder**, making every site truly personalized ⭐⭐⭐⭐⭐
 
@@ -35,4 +35,4 @@ We're an open source movement that depends on your support to stay online and th
 
 ## Demo credits
 
-- [Unsplash](https://unsplash.com/) images
+- [Unsplash](https://unsplash.com/) images -->
