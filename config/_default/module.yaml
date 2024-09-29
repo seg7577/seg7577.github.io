@@ -8,38 +8,49 @@ imports:
   #imports 섹션은 외부 묘듈을 가져와 사용하는 부분이다.
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+  - path: github.com/ahmadihamid/hugo-slider-shortcode
   #blox-netlify 관련 기능을 제공하는 hugo-blox 플러그인을 가져오는 모듈
   #blox-tailwind: Tailwind CSS와 관련된 모듈이다.
-  
+  #Github에서 찾은 이미지 슬라이더 모듈이다
+
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
 #마운트 섹션은 특정 디렉토리를 다른 위치에 "마운트"하는 설정이다. 여기서 사용되는 source는 실제 파일이 있는 경로이고, target은 이 파일이 배포될 때 Hugo가 접근할 수 있도록 맵핑되는 경로이다.
 #이를 통해 특정 폴더에서 가져온 파일을 Hugo에서 사용 가능한 경로에 연결한다.
 
-  - source: hugo-blox/blox/community
-    target: layouts/partials/blox/community/
-    includeFiles: '**.html'
-    #hugo-blox/blox/community -> layouts/partials/blox/
-    # -> hugo-blox/blox/community에 있는 HTML 파일들을 **layouts/partials/blox/community/**로 연결한다. 이로 인해 디렉토리에서 해당 HTML 파일들을 사용할 수 있다.
+  # - source: hugo-blox/blox/community
+  #   target: layouts/partials/blox/community/
+  #   includeFiles: '**.html'
+  #   #hugo-blox/blox/community -> layouts/partials/blox/
+  #   # -> hugo-blox/blox/community에 있는 HTML 파일들을 **layouts/partials/blox/community/**로 연결한다. 이로 인해 디렉토리에서 해당 HTML 파일들을 사용할 수 있다.
 
-  - source: hugo-blox/blox/all-access
-    target: layouts/partials/blox/
-    includeFiles: '**.html'
-    #hugo-blox/blox/all-access -> layouts/partials/blox/
-    # -> hugo-blox/blox/all-access**의 HTML 파일들을 layouts/partials/blox/디렉토리로 마운트한다. 해당 HTML 파일들은 layouts/partials/blox/ 경로에서 참조될 수 있다.
+  # - source: hugo-blox/blox/all-access
+  #   target: layouts/partials/blox/
+  #   includeFiles: '**.html'
+  #   #hugo-blox/blox/all-access -> layouts/partials/blox/
+  #   # -> hugo-blox/blox/all-access**의 HTML 파일들을 layouts/partials/blox/디렉토리로 마운트한다. 해당 HTML 파일들은 layouts/partials/blox/ 경로에서 참조될 수 있다.
   
-  - source: hugo-blox/blox
-    target: assets/dist/community/blox/
-    includeFiles: '**.css'
-    #hugo-blox/blox -> assets/dist/community/blox/
-    # -> hugo-blox/blox 디렉토리 내의 CSS 파일을 **assets/dist/community/blox/**로 연결한다. 이 경로에서 CSS 파일을 사용할 수 있다.
+  # - source: hugo-blox/blox
+  #   target: assets/dist/community/blox/
+  #   includeFiles: '**.css'
+  #   #hugo-blox/blox -> assets/dist/community/blox/
+  #   # -> hugo-blox/blox 디렉토리 내의 CSS 파일을 **assets/dist/community/blox/**로 연결한다. 이 경로에서 CSS 파일을 사용할 수 있다.
   
-  - source: layouts
-    target: layouts
+  # - source: layouts
+  #   target: layouts
     # layouts->layouts
     # ->프로젝트의 layouts 디렉토리를 그대로 사용한다. layouts 폴더는 페이지 템플릿, 파셜(partials) 등을 저장하는 디렉토리로, Hugo가 각 페이지를 렌더링할 때 이 디렉토리에서 템플릿 파일을 찾는다.
 
   - source: assets
     target: assets
     # assets -> assets
-    # -> assets 디렉토리의 파일들을 그대로 사용한다. 이 디렉토리는 JavaScript, CSS 등 정적 리소스가 저장되는 곳이다.
+
+  - source: css
+    target: static/css
+    includeFiles: '**.css'
+  - source: html
+    target: layouts
+    includeFiles: '**.html'
+  - source: js
+    tagget: layouts
+    includeFiles: '**.js'

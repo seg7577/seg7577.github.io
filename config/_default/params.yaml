@@ -40,7 +40,8 @@ header:
     #검색 기능이 헤더에 표시됨
     show_theme_chooser: true
     #사이트 방문자가 테마 선택 기능을 활성화 함
-    
+
+
 # Site footer
 footer:
   copyright:
@@ -71,5 +72,5 @@ features:
     content_dir: starters/blog/content
     branch: main
 
-params:
-  customCSS:  css/custom.css
+# params:
+#   customCSS:  css/custom.css

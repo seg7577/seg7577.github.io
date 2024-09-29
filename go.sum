@@ -2,3 +2,5 @@ github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231125204555-f431a4a2c705/go.mod h1:C7jfxMLv1bEUqbM9XDSmEpfOpS8w06OgqNDEcbuRgL4=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33 h1:x348mgyKtNQKGROIZ/A0WYbKitzD5ySaWWny0C8wF9U=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33/go.mod h1:+qBbqXbKT7M2nOeHQa5OrRXwQKpEx1RXpMGirHbT7HU=
+github.com/ahmadihamid/hugo-slider-shortcode v0.0.0-20181111213851-5100af4eb66d h1:+8Szc606IdZtHHHvf2UjxCRJUZKhgQ8DyRhM7OJ0AS4=
+github.com/ahmadihamid/hugo-slider-shortcode v0.0.0-20181111213851-5100af4eb66d/go.mod h1:8dFPagpUD3K1SdycECW68ggM2IUg+6iHPCKFnPU0weg=
