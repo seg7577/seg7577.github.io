@@ -41,7 +41,6 @@ header:
     show_theme_chooser: true
     #사이트 방문자가 테마 선택 기능을 활성화 함
 
-
 # Site footer
 footer:
   copyright:
@@ -54,6 +53,7 @@ footer:
       share_alike: true
       allow_commercial: false
 
+  
 # Localization
 locale:
   date_format: 'Jan 2, 2006'
