@@ -14,10 +14,30 @@ sections:
         style: 'text-align: justify; font-size: 0.8em;'
   - block: collection
     content:
+      title: hugo - default
       filters:
         folders:
           - card
     design:
       spacing:
+        padding: ['3rem', 0, '3rem', 0]
+
+  - block: collection
+    content:
+      title: weeknotes
+      filters:
+        folders:
+          - weeknotes
+    design:
+      spacing:
         padding: ['3rem', 0, '6rem', 0]
+  - block: collection
+    content:
+      title: travel
+      filters:
+        folders: 
+          - travel
+    design:
+      spacing:
+        padding: ['3rem', 0, '9rem', 0]
 ---
