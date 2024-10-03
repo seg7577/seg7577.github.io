@@ -70,7 +70,6 @@ website: ""
         .bindPopup('전북대학교 공과대학 7호관 위치')
         .openPopup();
 </script>
-
 <!-- 이미지 슬라이더 추가 -->
 <div class="slider">
   <div class="slides">
@@ -89,9 +88,20 @@ website: ""
       <div class="overlay"></div>
       <div class="text-overlay">me</div>
     </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIzNTI1NzA4&ixlib=rb-1.2.1&q=80&w=1080" alt="슬라이드 4">
+      <div class="overlay"></div>
+      <div class="text-overlay">Unsplash의Kari Shea</div>
+    </div>
+    <div class="slide">
+      <img src="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EA%B1%B4%EB%AC%BC-%EC%95%9E-%EB%8B%A4%EB%A6%AC-%EC%9C%84%EC%97%90-%EC%84%9C-%EC%9E%88%EB%8A%94-%EC%97%AC%EC%84%B1-wOm-aA8BQI0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" alt="슬라이드 5">
+      <div class="overlay"></div>
+      <div class="text-overlay">Unsplash의Nguyễn Hiệp</div>
+    </div>        
   </div>
 </div>
 
+  
 <style>
   /* 슬라이더 컨테이너 */
   .slider {
@@ -150,5 +160,5 @@ website: ""
   setInterval(() => {
     currentSlide = (currentSlide + 1) % totalSlides;
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-  }, 3000);
+  }, 2000);
 </script>
