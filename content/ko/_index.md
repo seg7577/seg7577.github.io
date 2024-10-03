@@ -15,12 +15,30 @@ sections:
 
   - block: collection
     content:
+      title: 휴고 테마 - 기본
       filters:
         folders:
           - card
-  
+    design:
+      spacing:
+        padding: ['3rem', 0, '3rem', 0]
+
+  - block: collection
+    content:
+      title: 이번주 기록
+      filters:
+        folders:
+          - weeknotes
     design:
       spacing:
         padding: ['3rem', 0, '6rem', 0]
----
-
+  - block: collection
+    content:
+      title: 여행
+      filters:
+        folders: 
+          - travel
+    design:
+      spacing:
+        padding: ['3rem', 0, '9rem', 0]
+---      

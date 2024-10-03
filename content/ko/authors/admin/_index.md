@@ -40,10 +40,6 @@ profiles:
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   - icon: academicons/cv
     url: uploads/resume.pdf
-content:
-  coordinates:
-    latitude: '35.84601324617979'
-    longitude: '127.13444961966684'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 

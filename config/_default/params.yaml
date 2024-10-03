@@ -7,8 +7,9 @@
 appearance:
   mode: system
   #system으로 설정된 경우, 사용자 시스템 설정에 따라 다크, 라이트 모드가 적용됨.
-  color: red
+  color: green
   #사이트의 주요 색상 설정
+
 
 
 # SEO
@@ -82,5 +83,6 @@ features:
     api_key: ''
     zoom: 15
 
-# params:
-#   customCSS:  css/custom.css
+
+params:
+  theme_color: blue  # 테마 색상으로 오렌지색 설정
