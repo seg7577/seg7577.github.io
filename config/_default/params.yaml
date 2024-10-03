@@ -71,6 +71,10 @@ features:
     url: 'https://github.com/seg7577/'
     content_dir: starters/blog/content
     branch: main
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
 
 # params:
 #   customCSS:  css/custom.css
