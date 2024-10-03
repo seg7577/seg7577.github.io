@@ -98,10 +98,10 @@ website: ""
       <div class="overlay"></div>
       <div class="text-overlay">Unsplash의Ahmed</div>
     </div>
-    <div class="slide">
+    <!-- <div class="slide">
       <img src="https://images.unsplash.com/photo-1727396561097-314b2baf1f9c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="슬라이드 6">
       <div class="overlay"></div>
-      <div class="text-overlay">Unsplash의Boran Pang</div>
+      <div class="text-overlay">Unsplash의BoranPang</div> -->
     </div>
   </div>
 </div>
