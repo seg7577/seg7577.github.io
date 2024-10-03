@@ -94,13 +94,19 @@ website: ""
       <div class="text-overlay">Unsplash의Kari Shea</div>
     </div>
     <div class="slide">
-      <img src="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EA%B1%B4%EB%AC%BC-%EC%95%9E-%EB%8B%A4%EB%A6%AC-%EC%9C%84%EC%97%90-%EC%84%9C-%EC%9E%88%EB%8A%94-%EC%97%AC%EC%84%B1-wOm-aA8BQI0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" alt="슬라이드 5">
+      <img src="https://images.unsplash.com/photo-1714291067290-10c5956a9fa0?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="슬라이드 5">
       <div class="overlay"></div>
-      <div class="text-overlay">Unsplash의Nguyễn Hiệp</div>
-    </div>        
+      <div class="text-overlay">Unsplash의Ahmed</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1727396561097-314b2baf1f9c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="슬라이드 6">
+      <div class="overlay"></div>
+      <div class="text-overlay">Unsplash의Boran Pang</div>
+    </div>
   </div>
 </div>
 
+  
   
 <style>
   /* 슬라이더 컨테이너 */
@@ -160,5 +166,5 @@ website: ""
   setInterval(() => {
     currentSlide = (currentSlide + 1) % totalSlides;
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-  }, 2000);
+  }, 1000);
 </script>
