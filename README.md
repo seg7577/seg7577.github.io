@@ -1,4 +1,4 @@
-# [m._.se0k's BLOG](https://seg7577.github.io)
+# [m._.se0k's BLOG](https://seg7577.github.io/)
 
 [![Screenshot](./.github/preview.png)](https://seg7577.github.io)
 
