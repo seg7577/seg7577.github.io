@@ -77,6 +77,10 @@ website: ""
       <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIzNTI1NzA4&ixlib=rb-1.2.1&q=80&w=1080" alt="슬라이드 4">
       <div class="overlay"></div>
       <div class="text-overlay">Unsplash의Kari Shea</div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1714291067290-10c5956a9fa0?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="슬라이드 5">
+      <div class="overlay"></div>
+      <div class="text-overlay">Unsplash의Ahmed</div>
     </div>
   </div>
 </div>
