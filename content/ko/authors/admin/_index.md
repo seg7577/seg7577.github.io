@@ -29,7 +29,8 @@ bio: 저는 전북대학교에서 컴퓨터공학을 전공하고 있는 학생 
 profiles:
   - icon: at-symbol
     url: 'mailto:seg082911@gmail.com'
-    
+  - icon: brands/youtube
+    url: https://youtu.be/wrmyqKRGW-0?si=L_rm299OkAZ_bbMm
   - icon: brands/instagram
     url: https://www.instagram.com/m._.se0k/
   - icon: brands/github

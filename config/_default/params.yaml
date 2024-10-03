@@ -45,7 +45,6 @@ header:
     show_logo: true
     logo:
       text: "m._.se0k BLOG"
-      filename: "logo.svg"
 
 
 # Site footer
