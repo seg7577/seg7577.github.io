@@ -86,3 +86,10 @@ sitemap:
 minify:
   _merge: deep
 riteStats: true
+languages:
+  ko:
+    weight: 1
+    contentDir: "content/ko"
+  en:
+    weight: 2
+    contentDir: "content/en"
