@@ -107,9 +107,9 @@ description: "기록.."
   <div class="gallery-item">
     <img src="/images/gallery/image25.jpg" alt="Image 25">
   </div>
-  <div class="gallery-item">
+  <!-- <div class="gallery-item">
     <img src="/images/gallery/image26.jpg" alt="Image 26">
-  </div>
+  </div> -->
   <div class="gallery-item">
     <img src="/images/gallery/image27.jpg" alt="Image 27">
   </div>
