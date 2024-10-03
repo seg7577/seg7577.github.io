@@ -78,52 +78,50 @@ website: ""
 <div class="slider">
   <div class="slides">
     <div class="slide">
-      <img src="/images/slide1.jpg" alt="슬라이드 1">
+      <img src="/images/slider/slide1.jpg" alt="슬라이드 1">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide2.jpg" alt="슬라이드 2">
+      <img src="/images/slider/slide2.jpg" alt="슬라이드 2">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay2~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide3.jpg" alt="슬라이드 3">
+      <img src="/images/slider/slide3.jpg" alt="슬라이드 3">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide4.jpg" alt="슬라이드 4">
+      <img src="/images/slider/slide4.jpg" alt="슬라이드 4">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide5.jpg" alt="슬라이드 5">
+      <img src="/images/slider/slide5.jpg" alt="슬라이드 5">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide6.jpg" alt="슬라이드 6">
+      <img src="/images/slider/slide6.jpg" alt="슬라이드 6">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide7.jpg" alt="슬라이드 7">
+      <img src="/images/slider/slide7.jpg" alt="슬라이드 7">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide8.jpg" alt="슬라이드 8">
+      <img src="/images/slider/slide8.jpg" alt="슬라이드 8">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
     <div class="slide">
-      <img src="/images/slide9.jpg" alt="슬라이드 9">
+      <img src="/images/slider/slide9.jpg" alt="슬라이드 9">
       <div class="overlay"></div>
       <div class="text-overlay">text-overlay3~!</div>
     </div>
-
-
   </div>
 </div>
 
