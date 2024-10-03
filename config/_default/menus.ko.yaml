@@ -17,7 +17,7 @@ main:
   - name: 블로그
     identifier: blog
     url: blog/
-    weight: 20
+    weight: 30
   - name: 챌린지 및 대회
     parent: blog
     url: blog/challenges
@@ -29,12 +29,12 @@ main:
 
   - name: 홈
     url: /
-    weight: 30
+    weight: 50
 
   - name: 넷플릭스 
     identifier: mynetflix
     url: mynetflix/
-    weight: 40
+    weight: 70
   - name: 한국
     parent: mynetflix
     url : mynetflix/korean-dramas/
@@ -47,7 +47,7 @@ main:
   - name: 공부
     identifier: study
     url: study/
-    weight: 50
+    weight: 90
   - name: 프로젝트
     parent: study
     url: study/project

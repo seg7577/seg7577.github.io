@@ -34,21 +34,21 @@ mounts:
     #hugo-blox/blox -> assets/dist/community/blox/
     # -> hugo-blox/blox 디렉토리 내의 CSS 파일을 **assets/dist/community/blox/**로 연결한다. 이 경로에서 CSS 파일을 사용할 수 있다.
   
-  - source: layouts
-    target: layouts
-    #layouts->layouts
-    # ->프로젝트의 layouts 디렉토리를 그대로 사용한다. layouts 폴더는 페이지 템플릿, 파셜(partials) 등을 저장하는 디렉토리로, Hugo가 각 페이지를 렌더링할 때 이 디렉토리에서 템플릿 파일을 찾는다.
+  # - source: layouts
+  #   target: layouts
+  #   #layouts->layouts
+  #   # ->프로젝트의 layouts 디렉토리를 그대로 사용한다. layouts 폴더는 페이지 템플릿, 파셜(partials) 등을 저장하는 디렉토리로, Hugo가 각 페이지를 렌더링할 때 이 디렉토리에서 템플릿 파일을 찾는다.
 
-  - source: assets
-    target: assets
-    # assets -> assets
+  # - source: assets
+  #   target: assets
+  #   # assets -> assets
 
-  - source: css
-    target: static/css
-    includeFiles: '**.css'
-  - source: html
-    target: layouts
-    includeFiles: '**.html'
-  - source: js
-    tagget: static/js
-    includeFiles: '**.js'
+  # - source: css
+  #   target: static/css
+  #   includeFiles: '**.css'
+  # - source: html
+  #   target: layouts
+  #   includeFiles: '**.html'
+  # - source: js
+  #   tagget: static/js
+  #   includeFiles: '**.js'

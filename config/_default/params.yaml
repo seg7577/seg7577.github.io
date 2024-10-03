@@ -40,6 +40,13 @@ header:
     #검색 기능이 헤더에 표시됨
     show_theme_chooser: true
     #사이트 방문자가 테마 선택 기능을 활성화 함
+    align: "center"
+    fixed_to_top: true
+    show_logo: true
+    logo:
+      text: "m._.se0k BLOG"
+      filename: "logo.svg"
+
 
 # Site footer
 footer:
