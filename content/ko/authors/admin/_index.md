@@ -92,11 +92,6 @@ website: ""
       <div class="overlay"></div>
       <div class="text-overlay">me</div>
     </div>
-    <div class="slide">
-      <img src="/images/slider/slide4.jpg" alt="슬라이드 4">
-      <div class="overlay"></div>
-      <div class="text-overlay">me</div>
-    </div>
   </div>
 </div>
 
