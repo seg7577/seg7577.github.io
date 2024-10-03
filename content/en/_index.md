@@ -14,7 +14,7 @@ sections:
         style: 'text-align: justify; font-size: 0.8em;'
   - block: collection
     content:
-      title: hugo - default
+      title: project
       filters:
         folders:
           - card

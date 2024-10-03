@@ -15,7 +15,7 @@ sections:
 
   - block: collection
     content:
-      title: 휴고 테마 - 기본
+      title: project
       filters:
         folders:
           - card
