@@ -39,7 +39,7 @@ profiles:
     url: 'tel:+821087704710'
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   - icon: academicons/cv
-    url: /uploads/resume.pdf
+    url: https://seg7577.github.io/uploads/resume.pdf
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
