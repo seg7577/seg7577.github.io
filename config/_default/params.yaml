@@ -17,7 +17,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Hugo Blox Builder.'
+    description: '전북대 권민석'
     #사이트에 대한 설명으로, 이 설명은 검색 엔진이나 sns에서 사이트가 공유될 때 나타남.
 
     twitter: 'GetResearchDev'
