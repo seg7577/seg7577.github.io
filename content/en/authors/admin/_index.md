@@ -73,6 +73,11 @@ website: ""
       <div class="overlay"></div>
       <div class="text-overlay">me</div>
     </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIzNTI1NzA4&ixlib=rb-1.2.1&q=80&w=1080" alt="슬라이드 4">
+      <div class="overlay"></div>
+      <div class="text-overlay">Unsplash의Kari Shea</div>
+    </div>
   </div>
 </div>
 
