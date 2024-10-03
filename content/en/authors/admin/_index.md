@@ -54,7 +54,6 @@ website: ""
         .bindPopup('전북대학교 공과대학 7호관 위치')
         .openPopup();
 </script>
-
 <!-- 이미지 슬라이더 추가 -->
 <div class="slider">
   <div class="slides">
@@ -77,6 +76,7 @@ website: ""
       <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIzNTI1NzA4&ixlib=rb-1.2.1&q=80&w=1080" alt="슬라이드 4">
       <div class="overlay"></div>
       <div class="text-overlay">Unsplash의Kari Shea</div>
+    </div>
     <div class="slide">
       <img src="https://images.unsplash.com/photo-1714291067290-10c5956a9fa0?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="슬라이드 5">
       <div class="overlay"></div>
@@ -90,6 +90,8 @@ website: ""
   </div>
 </div>
 
+  
+  
 <style>
   /* 슬라이더 컨테이너 */
   .slider {
@@ -148,5 +150,5 @@ website: ""
   setInterval(() => {
     currentSlide = (currentSlide + 1) % totalSlides;
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-  }, 3000);
+  }, 1000);
 </script>
