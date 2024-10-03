@@ -11,6 +11,5 @@ Here is a list of Netflix shows I enjoyed watching, along with my reviews.
 - [Ka Cas de Papel](https://namu.wiki/w/종이의%20집)
 ![laCasaDePapel 포스터](/images/laCasaDePapel.webp)
 
-- [마이네임](https://namu.wiki/w/마이%20네임)
-![마이네임 포스터](/images/maineim.jpeg)
-
+- [Mid Night Sun](https://namu.wiki/w/Midnight%20Sun(영화))
+![midNightSun 포스터](/images/midnightsun..webp)
