@@ -24,7 +24,7 @@ main:
     weight: 10
   - name: 기록
     parent: blog
-    url: blog/challenges
+    url: blog/record
     weight: 20
 
   - name: 홈
