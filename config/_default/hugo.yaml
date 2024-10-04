@@ -80,6 +80,12 @@ taxonomies:
   author: authors
 markup:
   _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true  # HTML 태그 허용
+  mermaid:
+    enable: true  # Mermaid 활성화
+
 related:
   threshold: 80
   includeNewer: true

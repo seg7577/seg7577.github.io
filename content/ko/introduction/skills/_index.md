@@ -1,5 +1,35 @@
 ---
-title: skills   #문서의 제목
-hide_date: true     #문서를 화면에 표시할 때 날짜를 숨기도록 지정
-reading_time: false #읽기 시간을 표시하지 않겠다는 뜻 content 하위는 그냥 싹 다 body
+title: ⚒️SKILLS⚒️
+hide_date: true
+reading_time: false
+authors:
+  - admin
+  - m._.se0k
+tag:
+  - Hugo Blox
+  - Markdown
 ---
+
+## 저의 기술 스택을 소개합니다.
+
+<style>
+  /* Mermaid 파이 차트 스타일 */
+  .mermaid .pieChart text {
+    fill: white; /* 글자 색상을 흰색으로 설정 */
+  }
+
+  /* 파이 차트 각 섹션의 색상 */
+  .mermaid .section-0 {
+    fill: #ff6347; /* 첫 번째 섹션의 색상을 토마토색으로 */
+  }
+
+  .mermaid .section-1 {
+    fill: #4682b4; /* 두 번째 섹션의 색상을 스틸 블루로 */
+  }
+</style>
+
+```mermaid
+pie
+    title 기술 스택
+    "C++" : 80
+    "Java" : 20
