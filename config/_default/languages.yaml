@@ -1,10 +1,8 @@
 ko:
   languageCode: ko
   contentDir: content/ko
-  theme: blog
 
 en:
   languageCode: en-us
   contentDir: content/en
-  theme: blog
   
