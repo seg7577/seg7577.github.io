@@ -7,7 +7,7 @@ date: 2022-09-01
 
 
 - 트리의 정의 : 무방향이면서 사이클이 없는 연결 그래프(Undirected Acyclic Connected Graph), 그래프의 한 종류라고 함. 앞서 배운 stack, queue, list 등과는 다르게 선형이 아니라 **계층적인 구조(hierarchical structure)**를 가지고 있다.
-    - ![그림1](images/dataStructureImages/image1.jpg)
+    ![그림1](/images/dataStructureImages/image1.jpg)
         
 - 특징
     1. → 정의 상으로는 계층과 관계된 것이 없으며, 또 정점이 1개이고 간선이 없는 그래프도 트리임에 유의해야함
@@ -22,9 +22,8 @@ date: 2022-09-01
     
     → **단말 노드 (leaf node)** : 자식이 없는 노드로 terminal 노드라고도 부른다. 최하단에 존재하는 노드들을 부르는 느낌
     
-    ![그림2](%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20d0a5b586da3c4f7bb031f7187fc28b4e/Untitled.png)
     
-    `
+    
     
 
 - 이진트리의 정의 : 각 노드의 자식이 최대 2개인 트리를 말한다.
@@ -37,17 +36,18 @@ date: 2022-09-01
         
         주의 사항 :  **전체 노드의 수 =  2^k - 1** 이 식은 포화 이진트리의 경우만 해당 되니 먼저 포화 이진트리에 대해 검사를 진행한 이후 식을 사용해야 한다. 
         
-    - 그림2
-        
-        [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcycePn%2Fbtq9IZY6CZx%2FT5jBed5A535HHx1GwnJLWk%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcycePn%2Fbtq9IZY6CZx%2FT5jBed5A535HHx1GwnJLWk%2Fimg.png)
+        ![그림3](/images/dataStructureImages/image3.jpg)
+       
         
     
 - 트리의 표현 방식 (일반 트리 vs 이진 트리)
     - 일반 트리의 경우 자식 노드의 개수를 n개 가질 수 있는 방면 이진 트리는 자식 노드를 최대 2개까지 가질 수 있다.
         
         여기서 주의 사항은 일반 트리가 여러 개의 자식 노드를 가지는 만큼 **사이클이 생기는 것을 생각해야 한다는 점이다.**
+        ![그림2](/images/dataStructureImages/image2.jpg)
+    
         
-        ![Untitled](%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20d0a5b586da3c4f7bb031f7187fc28b4e/Untitled%201.png)
+        
         
 
 - 포화 이진트리(Perfect Binary Tree)
@@ -56,18 +56,14 @@ date: 2022-09-01
         2. **전 이진트리의 성질도 만족해야 한다. 즉 모든 노드가 0개 혹은 2개의 자식 노드를 갖는다.**
         3. **모든 말단 노드가 동일한 깊이 또는 레벨을 갖는다.**
         4. 트리의 노드 개수가 정확히 2^k-1개여야 한다. 여기서 k는 트리의 높이(Level)이다.
-    - 그림3
-        
-        [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdfWC2R%2Fbtq9LqomTS7%2Frt4Io0pCfqBCckCs92CNz0%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdfWC2R%2Fbtq9LqomTS7%2Frt4Io0pCfqBCckCs92CNz0%2Fimg.png)
+		![그림5](/images/dataStructureImages/image5.jpg)
         
 
 - 완전 이진트리(Complete binary tree)
     - 특징
         1. 높이가 k인 트리에서 level 1부터 k - 1까지는 노드가 모두 채워져 있고 마지막 level k에서는 왼쪽부터 끝까지 순차적으로 채워져 있는 이진 트리이다.
         2. level k에서의 노드가 꽉 차는 경우 포화 이진트리이며, 완전 이진 트리의 경우 중간이 비어 있지 않은 걸 말한다.
-    - 그림4
-        
-        ![Untitled](%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20d0a5b586da3c4f7bb031f7187fc28b4e/Untitled%202.png)
+		![그림6](/images/dataStructureImages/image6.jpg)
         
     
 
@@ -115,8 +111,7 @@ date: 2022-09-01
         1. 현재 정점을 방문한다.
         2. 왼쪽 서브 트리를 전위 순회한다.
         3. 오른쪽 서브 트리르 전위 순회한다.
-        
-        [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F5VGKz%2FbtrnLHxVF6L%2FJ541A3dz2O96IOkyqNkReK%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F5VGKz%2FbtrnLHxVF6L%2FJ541A3dz2O96IOkyqNkReK%2Fimg.png)
+        ![그림7](/images/dataStructureImages/image7.jpg)
         
         → 전위 순회는 DFS와 방문 순서가 동일하다. DFS는 일단 자기 자신을 방문한 후 첫번째 자식부터 들어가 거기에서 DFS를 다시 시작하는 구조이기 때문, 그리고 구현 또한 재귀를 이용해 간단하게 가능하다. 자기 자신을 출력한 후 왼쪽 자식과 오른쪽 자식 각각에 대해 존재할 경우 전위 수노히를 하도록 구현하면 된다.
         
@@ -148,7 +143,7 @@ date: 2022-09-01
             2. 현재 정점을 방문한다.
             3. 오른쪽 서브 트리를 중위 순회한다.
         
-        [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbn5XGj%2FbtrnQ3sPaOC%2FmkGBKVZbKkOSRZyEOP3ock%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbn5XGj%2FbtrnQ3sPaOC%2FmkGBKVZbKkOSRZyEOP3ock%2Fimg.png)
+        ![그림8](/images/dataStructureImages/image8.jpg)
         
         - 중위 순회는 왼쪽 서브 트리 → 나 → 오른쪽 서브 트리순으로 처리하는 순회 방법
         
@@ -178,7 +173,7 @@ date: 2022-09-01
             2. 오른쪽 서브 트리를 후위 순회한다.
             3. 현재 정점을 방문한다.
         
-        [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcKf4oK%2FbtrnORmndUY%2F0nMS4lWln0rHT1Sy3SVDO1%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcKf4oK%2FbtrnORmndUY%2F0nMS4lWln0rHT1Sy3SVDO1%2Fimg.png)
+        ![그림9](/images/dataStructureImages/image9.jpg)
         
         - 후위 순회는 왼쪽 서브 트리 → 오른쪽 서브 트리 → 나 순으로 처리한다.
         

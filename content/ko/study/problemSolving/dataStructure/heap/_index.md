@@ -1,8 +1,13 @@
-# Heap
+---
+title: 📜HEAP(힙) 2022-09~2022-12
+hide_date: true
+reading_time: false
+date: 2022-09-01
+---
 
 - 개념
     
-    [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVCP5n%2FbtqSPE4E2hn%2F2G7f8scOqnpXFfJEN0bZLk%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVCP5n%2FbtqSPE4E2hn%2F2G7f8scOqnpXFfJEN0bZLk%2Fimg.png)
+    ![그림13](/images/dataStructureImages/image13.jpg)
     
     → heap은 이진 트리 자료구조이다.
     

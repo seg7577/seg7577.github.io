@@ -1,59 +1,73 @@
-# DFS
+---
+title: 📜DFS(Depth First Search, 깊이 우선 탐색) 2022-09~2022-12
+hide_date: true
+reading_time: false
+date: 2022-09-01
+---
 
-```cpp
-//DFS 개념
+- DFS(Depth First Search, 깊이 우선 탐색)은 그래프나 트리에서 깊이(depth)를 우선적으로 탐색하는 알고리즘입니다. DFS는 가능한 한 깊이 있는 경로를 먼저 탐색하고, 더 이상 갈 수 없을 때 이전 단계로 돌아가 다른 경로를 탐색하는 방식입니다.
+    - DFS 알고리즘의 작동 방식: 시작 노드에서 출발하여 인접한 노드들 중 하나를 선택해 계속 깊이 탐색을 진행합니다. 더 이상 갈 곳이 없으면,  이전 단계로 돌아와서 다른 인접한 노드를 탐색합니다. 모든 노드를 방문할 때까지 이 과정을 반복합니다.
+    - DFS의 동작 원리: DFS는 스택 자료구조를 사용하여 동작합니다. 이때 스택을 명시적으로 사용할 수도 있지만, 재귀 함수를 사용하여 스택을 암묵적으로 구현할 수 있습니다. DFS는 그래프를 깊이 우선으로 탐색하므로, 한 경로를 끝까지 탐색한 뒤에 다음 경로를 탐색하게 됩니다.
 
-#include <bits/stdc++.h>
-#include <iostream>
-#include <stack>
-using namespace std;
-#define X first
-#define Y second // pair에서 first, second를 줄여서 쓰기 위해서 사용
-int board[502][502] =
-{ {1,1,1,0,1,0,0,0,0,0},
- {1,0,0,0,1,0,0,0,0,0},
- {1,1,1,0,1,0,0,0,0,0},
- {1,1,0,0,1,0,0,0,0,0},
- {0,1,0,0,0,0,0,0,0,0},
- {0,0,0,0,0,0,0,0,0,0},
- {0,0,0,0,0,0,0,0,0,0} }; // 1이 파란 칸, 0이 빨간 칸에 대응
-bool vis[502][502]; // 해당 칸을 방문했는지 여부를 저장
-int n = 7, m = 10; // n = 행의 수, m = 열의 수
-int dx[4] = { 1,0,-1,0 };
-int dy[4] = { 0,1,0,-1 }; 
-// 상하좌우 네 방향을 의미
+    - DFS의 특징: 시간 복잡도: O(V + E), 여기서 V는 그래프의 정점 수, E는 그래프의 간선 수입니다. 공간 복잡도: O(V), 방문 여부를 기록하기 위한 배열이 필요합니다.
+    - 탐색 순서: DFS는 깊이를 우선으로 탐색하므로, 깊숙이 들어가서 탐색한 후 더 이상 갈 곳이 없으면 뒤로 돌아옵니다.
+    - DFS의 용도: 경로 탐색 (출발점에서 목적지까지의 경로가 존재하는지 확인), 그래프의 연결 요소 탐색 순환(사이클) 탐지, 미로 탐색 문제 Strongly Connected Components (강하게 연결된 컴포넌트) 찾기
 
-int main(void)
-{
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-		cout.tie(0);
-		
-    stack<pair<int, int> > S;
-    vis[0][0] = 1; // (0, 0)을 방문했다고 명시
-    S.push({ 0,0 }); // 스택에 시작점인 (0, 0)을 삽입.
+- 
+    ```cpp
+    //DFS 개념
 
-    while (!S.empty())
+    #include <bits/stdc++.h>
+    #include <iostream>
+    #include <stack>
+    using namespace std;
+    #define X first
+    #define Y second // pair에서 first, second를 줄여서 쓰기 위해서 사용
+    int board[502][502] =
+    { {1,1,1,0,1,0,0,0,0,0},
+    {1,0,0,0,1,0,0,0,0,0},
+    {1,1,1,0,1,0,0,0,0,0},
+    {1,1,0,0,1,0,0,0,0,0},
+    {0,1,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0} }; // 1이 파란 칸, 0이 빨간 칸에 대응
+    bool vis[502][502]; // 해당 칸을 방문했는지 여부를 저장
+    int n = 7, m = 10; // n = 행의 수, m = 열의 수
+    int dx[4] = { 1,0,-1,0 };
+    int dy[4] = { 0,1,0,-1 }; 
+    // 상하좌우 네 방향을 의미
+
+    int main(void)
     {
-        pair<int, int> cur = S.top();
-        S.pop();
-        //메모리초과, 시간초과를 방지하기 위해 pair변수에 넣어주고 바로 pop() 해주는 과정을 거침
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+            cout.tie(0);
+            
+        stack<pair<int, int> > S;
+        vis[0][0] = 1; // (0, 0)을 방문했다고 명시
+        S.push({ 0,0 }); // 스택에 시작점인 (0, 0)을 삽입.
 
-        cout << '(' << cur.X << ", " << cur.Y << ") -> ";
+        while (!S.empty())
+        {
+            pair<int, int> cur = S.top();
+            S.pop();
+            //메모리초과, 시간초과를 방지하기 위해 pair변수에 넣어주고 바로 pop() 해주는 과정을 거침
 
-        for (int dir = 0; dir < 4; dir++) { // 상하좌우 칸을 살펴볼 것이다.
-            int nx = cur.X + dx[dir];
-            int ny = cur.Y + dy[dir]; // nx, ny에 dir에서 정한 방향의 인접한 칸의 좌표가 들어감
+            cout << '(' << cur.X << ", " << cur.Y << ") -> ";
 
-            if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue; // 범위 밖일 경우 넘어감
-            if (vis[nx][ny] || board[nx][ny] != 1) continue; // 이미 방문한 칸이거나 파란 칸이 아닐 경우
+            for (int dir = 0; dir < 4; dir++) { // 상하좌우 칸을 살펴볼 것이다.
+                int nx = cur.X + dx[dir];
+                int ny = cur.Y + dy[dir]; // nx, ny에 dir에서 정한 방향의 인접한 칸의 좌표가 들어감
 
-            vis[nx][ny] = 1; // (nx, ny)를 방문했다고 명시
-            S.push({ nx,ny });//깊이 우선 탐색을 위해  nx와 ny의 좌표를 push함
+                if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue; // 범위 밖일 경우 넘어감
+                if (vis[nx][ny] || board[nx][ny] != 1) continue; // 이미 방문한 칸이거나 파란 칸이 아닐 경우
+
+                vis[nx][ny] = 1; // (nx, ny)를 방문했다고 명시
+                S.push({ nx,ny });//깊이 우선 탐색을 위해  nx와 ny의 좌표를 push함
+            }
         }
     }
-}
-```
+    ```
 
 - 테스트 케이스 메모리 정리
     - 입력이 600 → 700이 된 경우 컴파일이 중단된 이유 → IDE에서 메모리 사용량을 보았을 때 6MB에서 컴파일 중단이 됨을 알 수 있고, 몇 초가 지나고 아래와 같은 오류가 발생하며 메모리 사용량이 약 2배 가량 증가 (14MB ~ 20MB)를 사용함.

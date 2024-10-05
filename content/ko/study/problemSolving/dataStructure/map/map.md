@@ -1,12 +1,17 @@
-# Map
+---
+title: 📜MAP(맵) 2022-09~2022-12
+hide_date: true
+reading_time: false
+date: 2022-09-01
+---
 
-- 개념
+- 맵(Map)은 **키(key)**와 **값(value)**의 쌍으로 이루어진 데이터를 저장하는 자료구조입니다. 각 키는 유일하며, 이를 통해 대응되는 값을 효율적으로 검색, 삽입, 삭제할 수 있습니다. 맵은 다양한 프로그래밍 언어에서 제공되며, 상황에 따라 해시 테이블(Hash Table)이나 이진 탐색 트리(Binary Search Tree)로 구현됩니다.
     - map contaniner는 노드 기반으로 이루어져 있는 균형 이진 트리 구조이다.
     - map은 key와 value로 이루어져 있으며 pair 객체 형태로 저장된다.
     - Unique Key : key는 고유한 값이므로 중복이 불가능하다.(만약 중복 key를 사용하고 싶다면 multimap에서 사용 가능)
     - Ordered - map도 set과 마찬가지로 삽입이 되면서 자동으로 정렬이 된다. (default는 less/오름차순이다.)
     
-    [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F25B9D333597A9D5623](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F25B9D333597A9D5623)
+    ![그림14](/images/dataStructureImages/image14.jpg)
     
 - 사용 방법
     - 기본 생성 방법 → map <Data type1, Data type2> 변수이름;

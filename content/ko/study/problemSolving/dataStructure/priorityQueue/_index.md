@@ -2,6 +2,7 @@
 title: 📜Priority_Queue(우선순위 큐) 2022-09~2022-12
 hide_date: true
 reading_time: false
+date: 2022-09-01
 ---
 
 
@@ -51,7 +52,7 @@ reading_time: false
     
     ex) **A가 B의 부모 노드인 경우 key(A) ≥ key(B)의 조건은 항상 성립하는 이진트리를 말한다.**
     
-    ![Untitled](Priority_Queue(%E1%84%8B%E1%85%AE%E1%84%89%E1%85%A5%E1%86%AB%E1%84%89%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%8F%E1%85%B2)%20c067aaee5ff543b2afbec8424614c347/Untitled.png)
+    ![그림8](/images/dataStructureImages/image8.jpg)
     
     그림 10.5는 각각 최대 힙, 최소 힙 트리를 보여주고 있다. a의 경우 항상 key(부모노드) ≥ key(서브 노드)의 조건이 성립하고, b의 경우 항상 key(부모노드) ≤ key(서브 노드)의 조건이 성립한다.
     
@@ -59,14 +60,14 @@ reading_time: false
     
     → 또한 위의 두 종류의 힙 트리를 보면 공통점이 있다. 두 종류의 트리 모두 완전 이진 트리의 꼴이라는 것. **힙 트리는 항상 완전 이진 트리의 꼴을 유지하고 있어야 힙 트리라고 할 수 있다.**
     
-    ![Untitled](Priority_Queue(%E1%84%8B%E1%85%AE%E1%84%89%E1%85%A5%E1%86%AB%E1%84%89%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%8F%E1%85%B2)%20c067aaee5ff543b2afbec8424614c347/Untitled%201.png)
+    ![그림9](/images/dataStructureImages/image9.jpg)
     
 
 - 힙의 구현 방법
     
     힙은 완전 이진트리의 꼴의 모습을 보이고 있으므로 중간에 비어 있는 요소가 없다. **힙을 저장하는 효과적인 자료구조는 배열이다.** +) 프로그램 구현을 상대적으로 쉽게 하기 위해 첫 번째 인덱스는 0이 아닌 1로 잡자.(그냥 이게 편해서 쓰는 거라고 함)
     
-    ![Untitled](Priority_Queue(%E1%84%8B%E1%85%AE%E1%84%89%E1%85%A5%E1%86%AB%E1%84%89%E1%85%AE%E1%86%AB%E1%84%8B%E1%85%B1%20%E1%84%8F%E1%85%B2)%20c067aaee5ff543b2afbec8424614c347/Untitled%202.png)
+    ![그림10](/images/dataStructureImages/image11.jpg)
     
     다음의 그림을 참고하면 인덱스를 쉽게 구할 수 있다. **그림 보다 더 많은 노드를 가지게 된다면 해당 자식 노드에 대해 level탐색을 진행할텐데 이럴 경우 시간 복잡도가 O(N)**으로 발생할 수 있기에 간단한 식을 써 자식 노드의 인덱스를 손 쉽게 구할 수 있다.
     
