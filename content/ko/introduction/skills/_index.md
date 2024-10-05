@@ -1,5 +1,5 @@
 ---
-title: ⚒️SKILLS⚒️
+title: ⚒️기술⚒️
 hide_date: true
 reading_time: false
 authors:
