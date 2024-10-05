@@ -83,6 +83,3 @@ features:
     api_key: ''
     zoom: 15
 
-
-params:
-  theme_color: blue  # 테마 색상으로 오렌지색 설정

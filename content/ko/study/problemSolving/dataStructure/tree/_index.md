@@ -1,9 +1,13 @@
-# 개념
+---
+title: 📜TREE 2022-09~2022-12
+hide_date: true
+reading_time: false
+date: 2022-09-01
+---
+
 
 - 트리의 정의 : 무방향이면서 사이클이 없는 연결 그래프(Undirected Acyclic Connected Graph), 그래프의 한 종류라고 함. 앞서 배운 stack, queue, list 등과는 다르게 선형이 아니라 **계층적인 구조(hierarchical structure)**를 가지고 있다.
-    - 그림1
-        
-        [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Foz7gw%2FbtrnJBq9Wvy%2Fxdhx69lg02Awqb7fRa23BK%2Fimg.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Foz7gw%2FbtrnJBq9Wvy%2Fxdhx69lg02Awqb7fRa23BK%2Fimg.png)
+    - ![그림1](images/dataStructureImages/image1.jpg)
         
 - 특징
     1. → 정의 상으로는 계층과 관계된 것이 없으며, 또 정점이 1개이고 간선이 없는 그래프도 트리임에 유의해야함
@@ -18,7 +22,7 @@
     
     → **단말 노드 (leaf node)** : 자식이 없는 노드로 terminal 노드라고도 부른다. 최하단에 존재하는 노드들을 부르는 느낌
     
-    ![Untitled](%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20d0a5b586da3c4f7bb031f7187fc28b4e/Untitled.png)
+    ![그림2](%E1%84%80%E1%85%A2%E1%84%82%E1%85%A7%E1%86%B7%20d0a5b586da3c4f7bb031f7187fc28b4e/Untitled.png)
     
     `
     
@@ -431,3 +435,164 @@
     		delete node;
     	}
     ```
+	
+	- 문제
+		```cpp
+		//BFS 예시 코드1 - 부모 배열 채우기
+		#include <iostream>
+		#include <vector>
+		#include <queue>
+		using namespace std;
+
+		void bfs()
+		{
+			int root;
+			cin >> root;
+			vector<int> adj[10];
+			int p[10];
+			queue<int> q;
+			q.push(root);
+			while (!q.empty())
+			{
+				int cur = q.front();
+				q.pop();
+
+				for (auto nxt : adj[cur])
+				{
+					if (p[cur] == nxt)	continue;
+					q.push(nxt);
+					p[nxt] = cur; //자식 노드의 부모 노드를 재방문해서 다른 곳으로 새는 것을 막기 위함 기존의 BFS와의 차이
+				}
+			}
+		}
+		```
+
+		```cpp
+		//BFS 예시 코드2 - 부모와 depth 배열 채우기
+		#include <iostream>
+		#include <vector>
+		#include <queue>
+		using namespace std;
+
+		//시간 복잡도는 동일 O(V+E)이며 트리에서는 E = V - 1이기에 O(V)가 됨
+		//vis를 이용할 때와 코드의 흐름은 큰 차이는 없음 vis의 용도를 바꾸기 위해 bool형이 아닌 int형의로 해당 칸에서의 왔던 길?을 체크해주기 때문
+		//예시 코드1과는 큰 차이가 없음 추가된 것은 depth를 활용하여 거리를 측정하는 것
+
+		void bfs()
+		{
+
+			int root;
+			cin >> root;
+			vector<int> adj[10];
+			int p[10];
+			//P배열의 용도는 부모 노드를 재방문해서 왔던 길로 다시 돌아가지 않게 하기 위함
+			int depth[10];
+			queue<int> q;
+			q.push(root);
+			while (!q.empty())//BFS의 일반적인 틀
+			{
+				int cur = q.front();
+				q.pop();
+				cout << cur << ' ';
+
+				for (auto nxt : adj[cur])
+				{
+					if (p[cur] == nxt)	continue;
+					q.push(nxt);
+					p[nxt] = cur; //자식 노드의 부모 노드를 재방문해서 다른 곳으로 새는 것을 막기 위함 기존의 BFS와의 차이
+					depth[nxt] = depth[cur] + 1; //root에서부터 부모 노드의 거리 + 1 = root에서부터 현재 노드까지의 거리
+				}
+			}
+		}
+		```
+
+		```cpp
+		#include <iostream>
+		#include <stack>
+		#include <vector>
+		using namespace std;
+
+		//DFS 예시 코드1 - 부모와 depth 배열 채우기, 비재귀
+		//기존 BFS 예시 코드와의 차이는 크게 없다. queue을 stack으로 바꾸면 된다.
+
+		void dfs()
+		{
+
+			int root;
+			cin >> root;
+			vector<int> adj[10];
+			int p[10];
+			//P배열의 용도는 부모 노드를 재방문해서 왔던 길로 다시 돌아가지 않게 하기 위함
+			int depth[10];
+			stack<int> s;
+			s.push(root);
+			while (!s.empty())//BFS의 일반적인 틀
+			{
+				int cur = s.top();
+				s.pop();
+				cout << cur << ' ';
+
+				for (auto nxt : adj[cur])
+				{
+					if (p[cur] == nxt)	continue;
+					s.push(nxt);
+					p[nxt] = cur; //자식 노드의 부모 노드를 재방문해서 다른 곳으로 새는 것을 막기 위함 기존의 BFS와의 차이
+					depth[nxt] = depth[cur] + 1; //root에서부터 부모 노드의 거리 + 1 = root에서부터 현재 노드까지의 거리
+				}
+			}
+		}
+		```
+
+		```cpp
+		#include <iostream>
+		#include <stack>
+		#include <vector>
+		using namespace std;
+
+		//DFS 예시 코드2 - 부모와 depth 배열 채우기, 재귀
+		//기존 BFS 예시 코드와의 차이는 크게 없다. queue을 stack으로 바꾸면 된다.
+
+		vector<int> adj[10];
+		int p[10];
+		//P배열의 용도는 부모 노드를 재방문해서 왔던 길로 다시 돌아가지 않게 하기 위함
+		int depth[10];
+
+		void dfs(int cur)
+		{
+			cout << cur << ' ';
+			for (auto nxt : adj[cur])
+			{
+				if (p[cur] == nxt)	continue;
+				p[nxt] = cur; //자식 노드의 부모 노드를 재방문해서 다른 곳으로 새는 것을 막기 위함 기존의 BFS와의 차이
+				depth[nxt] = depth[cur] + 1; //root에서부터 부모 노드의 거리 + 1 = root에서부터 현재 노드까지의 거리
+				dfs(nxt);
+			}
+		}
+		//재귀로 구현시 코드는 상당히 깔끔해짐. 하지만 스택 메모리가 1MB로 제한되어 있을 땐 V가 대략 3만 이상일 때 1-2-3-4-5-6
+		//형태의 일자 트리 모양에서 스택 메모리 한계를 넘어설 수 있기때문에 스택 메모리에 대한 별도의 제한이 있을 때에는 주의해야 함
+		```
+
+		```cpp
+		//DFS 예시 코드3 - 단순 순회, 재귀
+
+		#include <iostream>
+		#include <stack>
+		#include <vector>
+		using namespace std;
+
+		vector<int> adj[10];
+		int p[10];
+		//P배열의 용도는 부모 노드를 재방문해서 왔던 길로 다시 돌아가지 않게 하기 위함
+		int depth[10];
+
+		void dfs(int cur, int par)
+		{
+			cout << cur << ' ';
+			for (auto nxt : adj[cur])
+			{
+				if (par == nxt)	continue;
+				dfs(nxt, cur);
+			}
+		}
+		//call dfs(1, 0);
+		```

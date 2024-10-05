@@ -2,7 +2,7 @@
 
 [Graph](%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9%20eddaca353e5b4f03a0f1824e4cd00a71/Graph%201dbefd8ae8a34c51b30b61aff6659599.md)
 
-[BFS](/problemSolving/dataStructure/bfs)
+[BFS](/problemSolving/dataStructure/bfs/)
 
 [DFS](%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9%20eddaca353e5b4f03a0f1824e4cd00a71/DFS%202e2793922c3f4419a5b9deb5e968f9c0.md)
 
